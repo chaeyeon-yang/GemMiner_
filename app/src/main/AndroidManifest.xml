@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GemMiner">
         <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".TicketingActivity"
             android:exported="false" />
         <activity
@@ -30,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainMenuActivity" />
     </application>
 
 </manifest>
