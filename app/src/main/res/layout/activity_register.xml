@@ -29,11 +29,11 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/register_email"
+        android:id="@+id/register_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="이메일"
+        android:text="비밀번호"
         android:textColor="@color/black"
         android:textFontWeight="600"
         android:textSize="20sp"
@@ -41,43 +41,22 @@
         app:layout_constraintTop_toBottomOf="@id/input_nickname" />
 
     <EditText
-        android:id="@+id/input_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="이메일을 입력하세요."
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="285dp"
-        app:layout_constraintTop_toBottomOf="@id/register_email"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <TextView
-        android:id="@+id/register_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="비밀번호"
-        android:textColor="@color/black"
-        android:textFontWeight="600"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/input_email" />
-
-    <EditText
         android:id="@+id/input_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="비밀번호을 입력하세요."
+        android:hint="비밀번호를 입력하세요."
+        android:inputType="textPassword"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="285dp"
         app:layout_constraintTop_toBottomOf="@id/register_password"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/register_favorite"
+        android:id="@+id/reRegister_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="좋아하는 아티스트"
+        android:layout_marginTop="16dp"
+        android:text="비밀번호 재확인"
         android:textColor="@color/black"
         android:textFontWeight="600"
         android:textSize="20sp"
@@ -85,14 +64,35 @@
         app:layout_constraintTop_toBottomOf="@id/input_password" />
 
     <EditText
+        android:id="@+id/reInput_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호을 입력하세요."
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="285dp"
+        app:layout_constraintTop_toBottomOf="@id/reRegister_password"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/register_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="좋아하는 아티스트"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reInput_password" />
+
+    <EditText
         android:id="@+id/input_favorite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="좋아하는 아티스트을 입력하세요."
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="285dp"
-        app:layout_constraintTop_toBottomOf="@id/register_favorite"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_favorite" />
 
     <TextView
         android:id="@+id/register_sex"
@@ -134,7 +134,7 @@
         android:id="@+id/input_registerBtn"
         android:layout_width="308dp"
         android:layout_height="52dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:text="완료"
         android:textColor="@color/white"
         android:textFontWeight="600"
