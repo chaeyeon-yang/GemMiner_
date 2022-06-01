@@ -3,22 +3,22 @@
     <item
         android:id="@+id/menu_global"
         android:icon="@drawable/globe"
-        android:title="MENU1"/>
+        android:title="GLOBAL"/>
 
     <item
         android:id="@+id/menu_heart"
         android:icon="@drawable/heart"
-        android:title="MENU2"/>
+        android:title="HEART"/>
 
     <item
         android:id="@+id/menu_basket"
         android:icon="@drawable/creditcard"
-        android:title="MENU3"/>
+        android:title="BASKET"/>
 
     <item
         android:id="@+id/menu_mypage"
         android:icon="@drawable/profile"
-        android:title="MENU4"/>
+        android:title="MYPAGE"/>
 
 
 </menu>
