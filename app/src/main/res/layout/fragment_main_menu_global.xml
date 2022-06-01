@@ -3,14 +3,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainMenuGlobalFragment">
+    tools:context=".MainMenuGlobalFragment"
+    android:orientation="vertical"
+    android:padding="50sp">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/searchEngine"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="메인"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search"
+            android:hint="검색어를 입력해주세요.."
+            android:textSize="20sp"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="44dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/localBtn"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/seoulBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="서울/경기"/>
+        <Button
+            android:id="@+id/gyeongSangBtn"
+            android:layout_marginLeft="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="경상도"/>
+        <Button
+            android:id="@+id/jeollaDoBtn"
+            android:layout_marginLeft="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="전라도"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/artistInfo"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_broccoli"
+            android:layout_width="85dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/broccoli"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/artistName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:text="브로콜리 너마저"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/performance_detail"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="8dp"
+                android:text="자세히보기"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Smenu"
+        android:layout_width="411dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="308dp"
+        tools:ignore="MissingConstraints" />
+
 
 </LinearLayout>

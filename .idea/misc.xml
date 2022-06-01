@@ -5,20 +5,20 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/menu_item_color.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_basket.xml" value="0.2796875" />
+        <entry key="app/src/main/res/layout/activity_basket.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.2796875" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2796875" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24444885253906257" />
         <entry key="app/src/main/res/layout/activity_main_menu.xml" value="0.2558876811594203" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2318840579710145" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.265625" />
         <entry key="app/src/main/res/layout/activity_ticketing.xml" value="0.2796875" />
-        <entry key="app/src/main/res/layout/fragment_main_menu_basket.xml" value="0.2558876811594203" />
-        <entry key="app/src/main/res/layout/fragment_main_menu_global.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_main_menu_basket.xml" value="0.19356620899145155" />
+        <entry key="app/src/main/res/layout/fragment_main_menu_global.xml" value="0.2860916137695313" />
         <entry key="app/src/main/res/layout/fragment_main_menu_global2.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/fragment_main_menu_heart.xml" value="0.2558876811594203" />
         <entry key="app/src/main/res/layout/fragment_main_menu_heart2.xml" value="0.13541666666666666" />
-        <entry key="app/src/main/res/layout/fragment_main_menu_mypage.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_main_menu_mypage.xml" value="0.18561859130859376" />
         <entry key="app/src/main/res/menu/main_item_color.xml" value="0.265625" />
         <entry key="app/src/main/res/menu/main_menu_bottom.xml" value="0.2765243530273438" />
       </map>

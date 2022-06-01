@@ -4,92 +4,131 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="50sp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/search"
-        android:layout_width="260sp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        android:hint="검색어를 입력해주세요.."
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/search_icon"
-        android:layout_width="44dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/search"
-        app:layout_constraintLeft_toRightOf="@+id/search"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/searchEngine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:hint="검색어를 입력해주세요.."
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="44dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/search"
+            app:layout_constraintLeft_toRightOf="@+id/search"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <Button
         android:id="@+id/seoulBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
         android:padding="10sp"
         android:text="서울/경기"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search" />
+        app:layout_constraintTop_toBottomOf="@id/searchEngine" />
+
 
     <Button
         android:id="@+id/gyeongSangBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="4dp"
         android:padding="10sp"
         android:text="경상도"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search" />
+        app:layout_constraintTop_toBottomOf="@id/searchEngine" />
 
     <Button
         android:id="@+id/jeollaDoBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="4dp"
         android:padding="10sp"
         android:text="전라도"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search" />
+        app:layout_constraintTop_toBottomOf="@id/searchEngine" />
 
-    <ImageView
-        android:id="@+id/img_broccoli"
-        android:layout_width="85dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="4dp"
-        android:src="@drawable/broccoli"
-        app:layout_constraintBaseline_toBottomOf="@id/seoulBtn"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/performanceInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="35sp"
+        android:paddingRight="40sp"
+        app:layout_constraintStart_toStartOf="@+id/seoulBtn"
+        app:layout_constraintTop_toBottomOf="@+id/seoulBtn">
+
+        <ImageView
+            android:id="@+id/img_broccoli"
+            android:layout_width="85dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/broccoli"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/performanceInfo" />
+
+        <TextView
+            android:id="@+id/artistName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:text="브로콜리 너마저"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/img_broccoli"
+            app:layout_constraintTop_toTopOf="@+id/img_broccoli" />
+
+        <Button
+            android:id="@+id/performance_detail"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:text="자세히보기"
+            app:layout_constraintLeft_toRightOf="@+id/img_broccoli"
+            app:layout_constraintTop_toBottomOf="@+id/artistName1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Smenu"
+        android:layout_width="411dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="308dp"
+        app:backgroundTint="#DFF4C7"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="198dp" />
-
-    <TextView
-        android:id="@+id/artistName1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:text="브로콜리 너마저"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toRightOf="@+id/img_broccoli"
-        app:layout_constraintTop_toTopOf="@+id/img_broccoli" />
-
-    <Button
-        android:id="@+id/performance_detail"
-        android:layout_width="130sp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="8dp"
-        android:text="자세히보기"
-        app:layout_constraintLeft_toRightOf="@+id/img_broccoli"
-        app:layout_constraintTop_toBottomOf="@+id/artistName1" />
+        app:layout_constraintTop_toBottomOf="@+id/performanceInfo"
+        app:menu="@menu/main_menu_bottom"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
