@@ -11,10 +11,7 @@ import com.example.gemminer.databinding.FragmentMainMenuGlobalBinding
 
 class MainMenuBasketFragment : Fragment() {
     lateinit var basketBinding: FragmentMainMenuBasketBinding
-    private val binding get() = basketBinding!!
-
     private var basketContext: Context?=null
-    private val _context get() = basketContext!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
