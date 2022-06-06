@@ -25,6 +25,7 @@
         app:layout_constraintTop_toBottomOf="@+id/performance_img">
 
         <TextView
+            android:fontFamily="@font/kotra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="브로콜리 너마저"
@@ -32,6 +33,7 @@
             android:textFontWeight="600"/>
 
         <ImageView
+            android:fontFamily="@font/kotra"
             android:id="@+id/fill_heart"
             android:layout_width="30sp"
             android:layout_height="30sp"
@@ -42,6 +44,7 @@
 
     <TextView
         android:id="@+id/performance_loc"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="공연장소: 서울시 용산구 노들섬"
@@ -53,6 +56,7 @@
 
     <TextView
         android:id="@+id/performance_date"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="일자: 2022년 6월 13일"
@@ -64,6 +68,7 @@
 
     <TextView
         android:id="@+id/performance_cost"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="가격: 22000원"
@@ -75,6 +80,7 @@
 
     <Button
         android:id="@+id/go_basket"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="96dp"
@@ -85,6 +91,7 @@
 
     <TextView
         android:id="@+id/performance_condition"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="반려동물 동반: 가능"

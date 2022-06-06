@@ -8,6 +8,7 @@
 
     <TextView
         android:id="@+id/basket_title"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -21,6 +22,7 @@
 
     <Button
         android:id="@+id/select_date"
+        android:fontFamily="@font/kotra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
@@ -33,6 +35,7 @@
 
     <TextView
         android:id="@+id/res"
+        android:fontFamily="@font/kotra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
@@ -44,6 +47,7 @@
 
     <Button
         android:id="@+id/booking_complete"
+        android:fontFamily="@font/kotra"
         android:layout_width="124dp"
         android:layout_height="55dp"
         android:layout_marginStart="96dp"

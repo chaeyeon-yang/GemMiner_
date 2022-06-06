@@ -12,6 +12,7 @@
 
     <TextView
         android:id="@+id/profile"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -36,6 +37,7 @@
 
     <TextView
         android:id="@+id/profile_name"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="삼식이"
@@ -51,6 +53,7 @@
 
     <TextView
         android:id="@+id/booking_info"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="예매정보"
@@ -76,6 +79,7 @@
 
         <TextView
             android:id="@+id/artistName1"
+            android:fontFamily="@font/kotra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="28dp"
@@ -88,6 +92,8 @@
 
     <TextView
         android:id="@+id/favorite_artist"
+
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="좋아하는 아티스트"
@@ -112,6 +118,7 @@
             android:src="@drawable/krr"/>
         <TextView
             android:id="@+id/artistName2"
+            android:fontFamily="@font/kotra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="28dp"
@@ -138,6 +145,7 @@
             android:src="@drawable/namsaeng"/>
         <TextView
             android:id="@+id/artistName3"
+            android:fontFamily="@font/kotra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="28dp"

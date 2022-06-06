@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainMenuGlobalFragment"
     android:padding="50sp">
 
@@ -14,13 +13,14 @@
         android:id="@+id/container">
 
         <LinearLayout
-            android:id="@+id/searchEngine"
+            android:id="@+id/search_engine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/search"
+                android:fontFamily="@font/kotra"
                 android:hint="검색어를 입력해주세요.."
                 android:textSize="20sp"
                 android:layout_width="260sp"
@@ -42,12 +42,14 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/seoulBtn"
+                android:fontFamily="@font/kotra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
                 android:text="서울/경기"/>
             <Button
                 android:id="@+id/gyeongSangBtn"
+                android:fontFamily="@font/kotra"
                 android:layout_marginLeft="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,6 +57,7 @@
                 android:text="경상도"/>
             <Button
                 android:id="@+id/jeollaDoBtn"
+                android:fontFamily="@font/kotra"
                 android:layout_marginLeft="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,6 +92,7 @@
 
                 <TextView
                     android:id="@+id/artistName1"
+                    android:fontFamily="@font/kotra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="28dp"
@@ -98,6 +102,7 @@
 
                 <Button
                     android:id="@+id/performance_detail"
+                    android:fontFamily="@font/kotra"
                     android:layout_width="130sp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="28dp"
@@ -129,6 +134,7 @@
 
                 <TextView
                     android:id="@+id/artistName2"
+                    android:fontFamily="@font/kotra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="28dp"
@@ -138,6 +144,7 @@
 
                 <Button
                     android:id="@+id/performance_detail2"
+                    android:fontFamily="@font/kotra"
                     android:layout_width="130sp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="28dp"
@@ -168,6 +175,7 @@
 
                 <TextView
                     android:id="@+id/artistName3"
+                    android:fontFamily="@font/kotra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="28dp"
@@ -177,6 +185,7 @@
 
                 <Button
                     android:id="@+id/performance_detail3"
+                    android:fontFamily="@font/kotra"
                     android:layout_width="130sp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="28dp"

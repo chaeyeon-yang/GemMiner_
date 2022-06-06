@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/title"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
@@ -23,6 +24,7 @@
 
     <EditText
         android:id="@+id/nickname"
+        android:fontFamily="@font/kotra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -34,6 +36,7 @@
 
     <EditText
         android:id="@+id/password"
+        android:fontFamily="@font/kotra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -45,6 +48,7 @@
 
     <Button
         android:id="@+id/loginBtn"
+        android:fontFamily="@font/kotra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/app_color"
@@ -59,6 +63,7 @@
 
     <TextView
         android:id="@+id/register"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
@@ -69,6 +74,7 @@
 
     <Button
         android:id="@+id/registerBtn"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"

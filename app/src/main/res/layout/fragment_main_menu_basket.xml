@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/basket"
+        android:fontFamily="@font/kotra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -43,6 +44,7 @@
 
             <TextView
                 android:id="@+id/artistName1"
+                android:fontFamily="@font/kotra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="28dp"
@@ -52,6 +54,7 @@
 
             <Button
                 android:id="@+id/performance_ticketing"
+                android:fontFamily="@font/kotra"
                 android:layout_width="130sp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="28dp"
