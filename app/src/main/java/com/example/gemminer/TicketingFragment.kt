@@ -11,6 +11,9 @@ import android.widget.CalendarView.OnDateChangeListener
 import android.widget.DatePicker
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.graphics.green
+import androidx.core.graphics.red
+import androidx.core.graphics.toColor
 import androidx.fragment.app.Fragment
 import com.example.gemminer.databinding.FragmentTicketingBinding
 import java.util.*
@@ -34,11 +37,13 @@ class TicketingFragment : Fragment() {
                 date = "${year}년 ${month+1}월 ${dayOfMonth}일"
                 mainActivity.findViewById<TextView>(R.id.res).text="예약날짜 : "+date
             }
-            DatePickerDialog(mainActivity, dateSetListener, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)).show()
+            DatePickerDialog(mainActivity, R.style.DialogTheme, dateSetListener, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)).show()
+
         }
         mainActivity.findViewById<Button>(R.id.booking_complete).setOnClickListener {
             Toast.makeText(mainActivity, "예약되었습니다.", Toast.LENGTH_SHORT).show()
         }
+
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         ticketingfrgmentBinding = FragmentTicketingBinding.inflate(layoutInflater)
