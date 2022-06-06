@@ -1,110 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainMenuGlobalFragment"
-    android:orientation="vertical"
     android:padding="50sp">
 
     <LinearLayout
-        android:id="@+id/searchEngine"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/search"
-            android:hint="검색어를 입력해주세요.."
-            android:textSize="20sp"
-            android:layout_width="260sp"
-            android:layout_height="wrap_content"/>
-
-        <ImageView
-            android:id="@+id/search_icon"
-            android:layout_width="44dp"
-            android:layout_height="40dp"
-            android:src="@drawable/search"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/localBtn"
-        android:layout_marginTop="4dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/seoulBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="서울/경기"/>
-        <Button
-            android:id="@+id/gyeongSangBtn"
-            android:layout_marginLeft="20sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="경상도"/>
-        <Button
-            android:id="@+id/jeollaDoBtn"
-            android:layout_marginLeft="20sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="전라도"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/artistInfo"
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/img_broccoli"
-            android:layout_width="85dp"
-            android:layout_height="91dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
-            android:src="@drawable/broccoli"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/container">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/searchEngine"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/artistName1"
+            <EditText
+                android:id="@+id/search"
+                android:hint="검색어를 입력해주세요.."
+                android:textSize="20sp"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_marginLeft="10sp"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/search"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/localBtn"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/seoulBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="28dp"
-                android:text="브로콜리 너마저"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
-
+                android:padding="10sp"
+                android:text="서울/경기"/>
             <Button
-                android:id="@+id/performance_detail"
-                android:layout_width="130sp"
+                android:id="@+id/gyeongSangBtn"
+                android:layout_marginLeft="20sp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="28dp"
-                android:layout_marginTop="8dp"
-                android:text="자세히보기"/>
+                android:padding="10sp"
+                android:text="경상도"/>
+            <Button
+                android:id="@+id/jeollaDoBtn"
+                android:layout_marginLeft="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="전라도"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10sp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
 
+        <LinearLayout
+            android:id="@+id/artistInfo"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_broccoli"
+                android:layout_width="85dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/broccoli"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10sp">
+
+                <TextView
+                    android:id="@+id/artistName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:text="브로콜리 너마저"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/performance_detail"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:text="자세히보기"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/artistInfo2"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_krr"
+                android:layout_width="85dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/krr"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10sp">
+
+                <TextView
+                    android:id="@+id/artistName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:text="크르르"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/performance_detail2"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:text="자세히보기"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/artistInfo3"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_namsaeng"
+                android:layout_width="85dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/namsaeng"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10sp">
+
+                <TextView
+                    android:id="@+id/artistName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:text="남생"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/performance_detail3"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:text="자세히보기"/>
+
+            </LinearLayout>
         </LinearLayout>
 
 
 
     </LinearLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/Smenu"
-        android:layout_width="411dp"
-        android:layout_height="64dp"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="308dp"
-        tools:ignore="MissingConstraints" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

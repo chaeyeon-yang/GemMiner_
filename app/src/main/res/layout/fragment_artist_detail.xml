@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ArtistDetailFragment"
+    android:orientation="vertical"
+    android:padding="50sp">
+
+    <ImageView
+        android:id="@+id/performance_img"
+        android:layout_width="316dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/broccoli"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/performance_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/performance_img">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="브로콜리 너마저"
+            android:textSize="20sp"
+            android:textFontWeight="600"/>
+
+        <ImageView
+            android:id="@+id/fill_heart"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/emptyheart"
+            android:layout_marginLeft="140sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/performance_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공연장소: 서울시 용산구 노들섬"
+        android:layout_marginTop="15sp"
+        android:textSize="20sp"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/performance_title"/>
+
+    <TextView
+        android:id="@+id/performance_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일자: 2022년 6월 13일"
+        android:textSize="20sp"
+        android:textFontWeight="600"
+        android:layout_marginTop="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/performance_loc"/>
+
+    <TextView
+        android:id="@+id/performance_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가격: 22000원"
+        android:textSize="20sp"
+        android:textFontWeight="600"
+        android:layout_marginTop="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/performance_date"/>
+
+    <Button
+        android:id="@+id/go_basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="8dp"
+        android:text="장바구니"
+        app:layout_constraintLeft_toRightOf="@id/performance_cost"
+        app:layout_constraintTop_toBottomOf="@+id/performance_date" />
+
+    <TextView
+        android:id="@+id/performance_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="반려동물 동반: 가능"
+        android:textSize="20sp"
+        android:textFontWeight="600"
+        android:layout_marginTop="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/performance_cost"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
