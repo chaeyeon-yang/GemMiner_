@@ -7,7 +7,7 @@
     android:padding="50sp">
 
     <TextView
-        android:id="@+id/basketTitle"
+        android:id="@+id/basket_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -19,33 +19,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <CalendarView
-        android:id="@+id/booking_calendar"
+    <EditText
+        android:id="@+id/select_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="84dp"
+        android:text="날짜 선택하기"
+        android:textSize="23sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/basketTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/basket_title" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:hint="예약날짜"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_date" />
 
     <Button
         android:id="@+id/booking_complete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="124dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="68dp"
         android:text="예약완료"
-        app:layout_constraintTop_toBottomOf="@+id/booking_calendar"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/booking_date"
-        android:layout_marginTop="20sp"
         android:textSize="20sp"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/booking_calendar"
-        app:layout_constraintLeft_toRightOf="@+id/booking_complete"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/res" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

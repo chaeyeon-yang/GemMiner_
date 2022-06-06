@@ -27,6 +27,8 @@ class MainMenuBasketFragment : Fragment() {
         basketBinding.performanceTicketing.setOnClickListener {
             (activity as HomeActivity).btnFragment(TicketingFragment())
         }
+
+
         return view
     }
 
